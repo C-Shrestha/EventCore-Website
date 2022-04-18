@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+ <html lang="en"></html>
+   <head>
+     <link rel="stylesheet" href="css/login.css"/>
+     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+    <header class = "site-header">
+      <div id="site-header-name"><a href="index.php">Event Core</a></div>
+      <a href="index.php"><img id="logo" src="images/ECLogo.png"></a>
+    </header>
+    <div class="btn-container">
+      <div class = "each-btn"><button onclick="location.href = 'index.php#events';" class ="btn">Events</button></div>
+      <div class = "each-btn"><button onclick="location.href = 'login.html';" class ="btn">Login</button></div>
+      <div class = "each-btn"><button onclick="location.href = 'signup.html';" class ="btn">Sign&nbsp;up</button></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="form">
+      <form class="login-form" action = "PHP/login.php" method="POST">
+        <input type="text" placeholder="user id" name = "username"/>
+        <input type="password" placeholder="password" name ="password"/>
+        <input type="submit" value="submit" name = "submit">
+        <p class="text">Not registered? <a href="signup.html">Sign up</a></p>
+      </form>
+    </div>
+  </body>
+</html>

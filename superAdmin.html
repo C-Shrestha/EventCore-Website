@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en"></html> 
+  <head>
+    <link rel="stylesheet" href="css/superAdmin.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  </head> 
+  <body> 
+    <div id="background-box"></div>
+    <header class = "site-header">
+      <div id="site-header-name"><a href="salogin.php">Event Core</a></div>
+      <a href="salogin.php"><img id="logo" src="images/ECLogo.png"></a>
+    </header>
+    <div class="btn-container">
+        <div class = "each-btn"><button onclick="location.href = 'salogin.php#events';" class ="btn">Events</button></div>
+        <div class = "each-btn"><button onclick="location.href = 'superAdmin.html#uni';" class ="btn">University</button></div>
+        <div class = "each-btn"><button onclick="location.href = 'logout.html';" class ="btn">Logout</button></div>
+      </div>
+
+    <div id="heading"><a id="uni">UNIVERSITY PROFILE</a></div> 
+    <div class="container">
+      <div class="item">
+        <div class="profile">Your Universities</div>
+      </div>
+      <div class="item">
+        <div class="form">
+          <form class="uni-form">
+            <input type="text" placeholder="name"/>
+            <input type="text" placeholder="location"/>
+            <input type="text" placeholder="description"/>
+            <input type="number" placeholder="number of students"/>
+            <button>create</button>
+          </form>
+        </div> 
+      </div>
+    </div>  
+  </body>
+</html>

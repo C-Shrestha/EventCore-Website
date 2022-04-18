@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"></html> 
+  <head>
+    <link rel="stylesheet" href="css/invalidEvent.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  </head> 
+  <body> 
+    <div id="background-box"></div>
+    <header class = "site-header">
+      <div id="site-header-name"><a href="adminlogin.php">Event Core</a></div>
+      <a href="adminlogin.php"><img id="logo" src="images/ECLogo.png"></a>
+    </header>
+    <div class="btn-container">
+      <div class = "each-btn"><button onclick="location.href = 'adminlogin.php#events';" class ="btn">Events</button></div>
+      <div class = "each-btn"><button onclick="location.href = 'admin.php#ce';" class ="btn">Create&nbsp;Event</button></div>
+      <div class = "each-btn"><button onclick="location.href = 'admin.php#rso';" class ="btn">RSOs</button></div>
+      <div class = "each-btn"><button onclick="location.href = 'logout.html';" class ="btn">Logout</button></div>
+    </div>
+    <div id="sub-heading">University Name Here</div> 
+    <div id="rso"><a id="rso">Registered Student Organizations</a></div>
+    <div class="container">
+      <div class="item">
+        <div class="rsos">RSO 1</div>
+      </div>
+      <div class="item">
+        <div class="rsos">RSO 2</div> 
+      </div>
+      <div class="item">
+        <div class="rsos">RSO 3</div> 
+      </div>
+    </div>
+    <div id="ce"><a id="ce">Create Event</a></div>
+    <div class="form">
+      <form class="event-form">
+        <input type="text" placeholder="name"/>
+        <input type="text" placeholder="category: (public/private/RSO)"/>
+        <input type="text" placeholder="description"/>
+        <input type="time" placeholder="time"/>
+        <input type="date" placeholder="date"/> 
+        <input type="tel" placeholder="contact phone"/>
+        <input type="email" placeholder="contact email"/>
+        <br><label for="invalid">Invalid! Event already exists.</label><br><br>
+        <button>create</button>
+      </form>
+    </div>
+  </body>
+</html>
