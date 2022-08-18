@@ -269,7 +269,7 @@ $conn = connectToDatabase();
     
 <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd_tb7xB0nNjXLyiLIIzdWRF31l0ZKznQ&callback=initMap&v=weekly"
+  src="https://maps.googleapis.com/maps/api/js?key=(apikey add here)&callback=initMap&v=weekly"
   async
 ></script> 
   </body>
